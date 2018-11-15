@@ -3,11 +3,14 @@
 
 <html>
 <head>
+
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
   <link href='css/bootstrap.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width,
   initial-scale=1.0">
-  <style>
+
+
+<style>
   header{
     background: url("background.jpg");
     background-size:cover;
@@ -16,8 +19,7 @@
     color: black
   }
   body{
-background-color: ;
-
+    background-color:rgba(213,170,135,0.7);
   }
   ul {
     padding: 30px;
@@ -42,6 +44,9 @@ background-color: ;
   p{
     text-align: center;
     font-style: oblique;
+    font-weight: bold;
+  }
+  strong{
     font-weight: bold;
   }
   img{width:250px;
@@ -71,8 +76,14 @@ background-color: ;
     height: 100px;
     margin: 10px 0px 10px 0px;
   }
+  .section-heading{
+    color:black;
+
+  }
   </style>
 </head>
+
+<title>ORBE</title>
 
 <body>
   <header>
@@ -82,15 +93,17 @@ background-color: ;
         <div class="col-sm-12">
           <ul>
             <li><a id="about" href="#">Who We Are</a></li>
-            <li><a href="#activities">What We Do</a></li>
-            <li><a href="#joining">How to Join</a></li>
+            <li><a id="activities" href="#">What We Do</a></li>
+            <li><a id="joining" href="#">How to Join</a></li>
             <li><a href="#">News</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a id="contact" href="#">Contact Us</a></li>
           </ul>
         </div>
+
         <div class="col-sm-12">
           <img src="./logo.jpg" class=”img-responsive” >
         </div>
+        
       </div>
       <div class="row">
         <div class="col-sm-12">
@@ -107,7 +120,7 @@ background-color: ;
 
  <h2 class="section-heading">Who We Are</h2>
                 <hr></hr>
-      <p>
+    <p>
     We are a group of undergraduate students from the <strong>University of Aberdeen</strong>, coming from various fields of knowledge, united by the desire to speak up for our planet and foster change towards a more sustainable future.
     Check out our manifesto, which describes our aims and objectives!
     </p>
@@ -117,26 +130,50 @@ background-color: ;
         </div>
     </section>
 
-<section id="activities">
+<section id="activities_sec">
         <div class="container">
+            <div class="col-sm-12 mx-auto text-center">
+
   <h2 class="section-heading">What We Do</h2>
 
+  <hr></hr>
   <p>We organise discussions with a common environmental theme, through the use of an interdisciplinary approach, thus enabling all subjects to play a pivotal role in the talk for climate change.Our aim is to bring diverse views on global issues and to make all students feel compelled to participate and to freely share their knowledge.We think education represents the first step towards change, and our university campus is the best place to offer that, thanks to the role that passionate teachers and active students play in it.</p>
-        </div >
+  <hr></hr>
+          </div>
+        </div>
   </section>
 
-<section id="joining">
+<section id="joining_sec">
       <div class="container">
-  <h2 class="section-heading">How to join</h2>
-  <p>You can become part of our team, helping us out with the development of new ideas and with events' organisation. If you are not a student from Aberdeen University, but you still want to make a change within your academic community, you can set up your own ORBE team! With the help of friends or colleagues who have the same interest in creating environmental related discussions.</p>
+        <div class="col-sm-12 mx-auto text-center">
 
-          </div class="container">
+          <h2 class="section-heading">How To Join</h2>
+              <hr></hr>
+  <p>You can become part of our team, helping us out with the development of new ideas and with events' organisation. If you are not a student from Aberdeen University, but you still want to make a change within your academic community, you can set up your own ORBE team! With the help of friends or colleagues who have the same interest in creating environmental related discussions.</p>
+              <hr></hr>
+        </div>
+      </div>
 </section>
+
+<section id="contacts_sec">
+  <div class="container">
+      <div class="col-sm-12 mx-auto text-center">
+
+      <h2 class="section-heading">CONTACT US</h2>
+
+          <p>You can contact us through Facebook</p>
+              <a href="https://www.facebook.com/weareorbe/" target="_blank" class="fb-full">
+                  <img src="th.jpg"
+                      class="contrapics" id="Facebook">
+                                                        </a>
+                  <p> or E-mail (orbe.is@gmail.com) </p>
+        </div>
+     </div>
+  </section>
 
 
 <script src="query-3.2.1.min.js"></script>
 <script>
-  console.log('dupa');
   function scrollToAnchor(aid) {
     var aTag = $("#"+ aid);
     $("html,body").animate({scrollTop: aTag.offset().top},'slow');
@@ -146,16 +183,36 @@ background-color: ;
    });
  </script>
 
+ <script>
+   function scrollToAnchor(aid) {
+     var aTag = $("#"+ aid);
+     $("html,body").animate({scrollTop: aTag.offset().top},'slow');
+   }
+   $("#activities").click(function() {
+      scrollToAnchor("activities_sec");
+    });
+  </script>
 
-<p> CONTACT US
-</p>
-  <p>You can contact us through Facebook
-</p>
-<a href="https://www.facebook.com/weareorbe/" target="_blank" class="fb-full">
-  <img src="th.jpg"
-  class="contrapics" id="Facebook">
-</a>
-<p> or E-mail (orbe.is@gmail.com)
-</p>
-=</body>
+  <script>
+    function scrollToAnchor(aid) {
+      var aTag = $("#"+ aid);
+      $("html,body").animate({scrollTop: aTag.offset().top},'slow');
+    }
+    $("#joining").click(function() {
+       scrollToAnchor("joining_sec");
+     });
+   </script>
+
+   <script>
+     function scrollToAnchor(aid) {
+       var aTag = $("#"+ aid);
+       $("html,body").animate({scrollTop: aTag.offset().top},'slow');
+     }
+     $("#contact").click(function() {
+        scrollToAnchor("contacts_sec");
+      });
+    </script>
+
+</body>
+
 </html>
