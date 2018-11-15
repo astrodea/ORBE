@@ -15,6 +15,10 @@
     text-align: center;
     color: black
   }
+  body{
+background-color: ;
+
+  }
   ul {
     padding: 30px;
     background: rgba(10,0,0,0);
@@ -26,16 +30,14 @@
       display: inline;
       padding: 0px 10px 0px 10px;
     }
-    h1{
-      text-align: left;
-      color: white
-    }
+
     h2{
     font-family: 'Abel', sans-serif;
     text-align: center;
     font-size: 60px;
     color: white;
     background-color: transparent;
+
   }
   p{
     text-align: center;
@@ -56,18 +58,27 @@
   }
   .img-responsive {margin:auto;
   }
+  .section-heading{
+      color: black;
+      text-align: center;
+    }
+  .container{
+    text-align: justify;
+
+  }
   </style>
 
 </head>
+
 <body>
   <header>
     <div class='jumbotron'>
       <div class="row">
         <div class="col-sm-12">
           <ul>
-            <li><a href="#">Who We Are</a></li>
-            <li><a href="#">What We Do</a></li>
-            <li><a href="#">How to Join</a></li>
+            <li><a id="about" href="#">Who We Are</a></li>
+            <li><a href="#activities">What We Do</a></li>
+            <li><a href="#joining">How to Join</a></li>
             <li><a href="#">News</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
@@ -84,22 +95,51 @@
         </div>
       </div>
     </header>
-  <p>WHO WE ARE
-We are a group of undergraduate students from the University of Aberdeen, coming from various fields of knowledge, united by the desire to speak up for our planet and foster change towards a more sustainable future.
-Check out our manifesto, which describes our aims and objectives!
-Link to our manifesto to download </p>
-<p>WHAT WE DO
-We organise discussions with a common environmental theme, through the use of an interdisciplinary approach, thus enabling all subjects to play a pivotal role in the talk for climate change.
-Our aim is to bring diverse views on global issues and to make all students feel compelled to participate and to freely share their knowledge.
-We think education represents the first step towards change, and our university campus is the best place to offer that, thanks to the role that passionate teachers and active students play in it.
-</p>
-<p> HOW TO JOIN
-  <ol>
-<li>You can become part of our team, helping us out with the development of new ideas and with events' organisation. </li>
-<li>If you are not a student from Aberdeen University, but you still want to make a change within your academic community, you can set up your own ORBE team!
-With the help of friends or colleagues who have the same interest in creating environmental related discussions</li>
-</ol>
-</p>
+
+<section id="about_sec">
+        <div class="container">
+          <div class="col-sm-12 mx-auto text-center">
+
+ <h2 class="section-heading">Who We Are</h2>
+                <hr></hr>
+      <p>
+    We are a group of undergraduate students from the <strong>University of Aberdeen</strong>, coming from various fields of knowledge, united by the desire to speak up for our planet and foster change towards a more sustainable future.
+    Check out our manifesto, which describes our aims and objectives!
+    </p>
+    <hr> Link to our manifesto to download</hr>
+
+          </div>
+        </div>
+    </section>
+
+<section id="activities">
+        <div class="container">
+  <h2 class="section-heading">What We Do</h2>
+
+  <p>We organise discussions with a common environmental theme, through the use of an interdisciplinary approach, thus enabling all subjects to play a pivotal role in the talk for climate change.Our aim is to bring diverse views on global issues and to make all students feel compelled to participate and to freely share their knowledge.We think education represents the first step towards change, and our university campus is the best place to offer that, thanks to the role that passionate teachers and active students play in it.</p>
+        </div >
+  </section>
+
+<section id="joining">
+      <div class="container">
+  <h2 class="section-heading">How to join</h2>
+  <p>You can become part of our team, helping us out with the development of new ideas and with events' organisation. If you are not a student from Aberdeen University, but you still want to make a change within your academic community, you can set up your own ORBE team! With the help of friends or colleagues who have the same interest in creating environmental related discussions.</p>
+
+          </div class="container">
+</section>
+
+
+<script src="query-3.2.1.min.js"></script>
+<script>
+  console.log('dupa');
+  function scrollToAnchor(aid) {
+    var aTag = $("#"+ aid);
+    $("html,body").animate({scrollTop: aTag.offset().top},'slow');
+  }
+  $("#about").click(function() {
+     scrollToAnchor("about_sec");
+   });
+ </script>
 
 </body>
 </html>
