@@ -32,14 +32,12 @@
       display: inline;
       padding: 0px 10px 0px 10px;
     }
-
-    h2{
+  h2{
     font-family: 'Abel', sans-serif;
     text-align: center;
     font-size: 80px;
     color: white;
     background-color: transparent;
-
   }
   p{
     text-align: center;
@@ -47,7 +45,12 @@
     font-weight: bold;
     font-size: 27px;
   }
-  strong{
+  .manifesto{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Abel";
+  }
+  .strong{
     font-weight: bold;
   }
   img{width:250px;
@@ -66,6 +69,18 @@
   }
   a{
     padding:0px;
+}
+a:link, a:visited {
+    background-color: rgba(212,238,159);
+    color: black;
+    padding: 14px 25px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active {
+    background-color: green;
   }
   a.fb-full{
     display: block;
@@ -79,10 +94,14 @@
   }
   .section-heading{
     color:black;
-
   }
   .container{
-    height: 500px;
+    height: 600px;
+  }
+  .news_sec{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Abel";
   }
   </style>
 </head>
@@ -99,7 +118,7 @@
             <li><a id="about" href="#">Who We Are</a></li>
             <li><a id="activities" href="#">What We Do</a></li>
             <li><a id="joining" href="#">How to Join</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="news.html">News</a></li>
             <li><a id="contact" href="#">Contact Us</a></li>
           </ul>
         </div>
@@ -122,14 +141,18 @@
         <div class="container">
           <div class="col-sm-12 mx-auto text-center">
 
- <h2 class="section-heading">Who We Are</h2>
+             <h2 class="section-heading">Who We Are</h2>
                 <hr></hr>
     <p>
     We are a group of undergraduate students from the <strong>University of Aberdeen</strong>, coming from various fields of knowledge, united by the desire to speak up for our planet and foster change towards a more sustainable future.
     Check out our manifesto, which describes our aims and objectives!
     </p>
-    <hr> Our manifesto </hr>
-
+                <hr></hr>
+              <section id="manifesto">
+                  <a href="ORBES-MANIFESTO.docx" download="our manifesto">
+                    <p> Our manifesto </p>
+                          </a>
+            </section>
           </div>
         </div>
     </section>
@@ -155,6 +178,12 @@
               <hr></hr>
   <p>You can become part of our team, helping us out with the development of new ideas and with events' organisation. If you are not a student from Aberdeen University, but you still want to make a change within your academic community, you can set up your own ORBE team! With the help of friends or colleagues who have the same interest in creating environmental related discussions.</p>
               <hr></hr>
+
+                  <section id="news_sec">
+                      <p>For more information about our events and the kind of topics we are interested in you can see this collection of our posts </p>
+                      <a href="news.html"style="font-size: 30px;">News</a>
+                      <hr></hr>
+                  </section>
         </div>
       </div>
 </section>
