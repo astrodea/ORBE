@@ -1,1 +1,92 @@
-h1
+  header{
+    background: url("background.jpg");
+    background-size:cover;
+    background-position: top;
+    text-align: center;
+    color: black
+  }
+  body{
+    background-color:rgba(213,170,135,0.7);
+  }
+  ul {
+    padding: 30px;
+    background: rgba(10,0,0,0);
+    color: white;
+    font-size: 20px;
+    margin:0px 5px 0px 110px;
+  }
+  li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+  h2{
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    background-color: transparent;
+  }
+  p{
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 27px;
+  }
+  .manifesto{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Abel";
+  }
+  .strong{
+    font-weight: bold;
+  }
+  img{width:250px;
+    height:250px;
+    position:relative;
+    text-align:center;
+    margin: 10px 0px 0px 0px;
+    border-radius: 150px;
+    padding-left: 0px;
+  }
+  .jumbotron {
+      background-color: rgba(255,255,255,0.5);
+      background-color: transparent;
+  }
+  .img-responsive {margin:auto;
+  }
+  a{
+    padding:0px;
+}
+a:link, a:visited {
+    background-color: rgba(212,238,159);
+    color: black;
+    padding: 14px 25px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active {
+    background-color: green;
+  }
+  a.fb-full{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .contrapics {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0px 10px 0px;
+  }
+  .section-heading{
+    color:black;
+  }
+  .container{
+    height: 600px;
+  }
+  .news_sec{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Abel";
+  }
