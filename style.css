@@ -60,6 +60,7 @@
 a:link, a:visited {
     background-color: rgba(212,238,159);
     color: black;
+    font-weight:bold;
     padding: 14px 25px;
     border-radius: 25px;
     text-align: center;
